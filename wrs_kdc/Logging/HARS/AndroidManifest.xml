@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.honda.hrao.hars"
+    android:sharedUserId="android.uid.system" >
+
+    <application
+        android:persistent="true" >
+
+        <service android:name=".HARS">
+            <intent-filter>
+                <action android:name="com.honda.hrao.hars.HARS" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".HARSBootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>
