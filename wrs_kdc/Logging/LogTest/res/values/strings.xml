@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main">main log</string>
+    <string name="system">system log</string>
+    <string name="test">test log</string>
+</resources>
